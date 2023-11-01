@@ -1,0 +1,21 @@
+h1, h2 {
+	font-family: Arial;
+	color:#CC6600;
+	border-bottom:thin dotted #888888;
+}
+body{
+  font-family:Verdana, Geneva, 'Arial';
+}
+h2{
+  font-weight:normal;
+  font-size: 1.3em;
+}
+blockquote{
+   font-style: italic;
+}
+h1{
+   font-size: 2.2em;
+}
+html{
+   font-size: 12px;
+}
