@@ -80,16 +80,3 @@ h2 {
 body p a:link { color: #007e7e; }
 body p a:visited { color: #333333; }
 
-
-.elixirs a:link {
-  color: #007e7e;
-}
-
-.elixirs a:visited {
-  color: #333333;
-}
-
-.elixirs a:hover {
-  background: #f88396;
-  color: #0d5353;
-}
