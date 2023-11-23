@@ -1,5 +1,4 @@
 body { 
-
   background-color: #b5a789;
   font-family:      Georgia, "Times New Roman", Times, serif;
   font-size:        small;
@@ -17,16 +16,17 @@ body {
   font-size:        105%;
   padding:          15px;
   margin:           0px 330px 10px 10px;
+  position:  relative;
+	top:          0px;
+	left:        0px;
 }
 
-.sidebar {
 
-	position:  absolute;
+.sidebar {
   background:       #efe5d0 url(images/background.gif) bottom right;
   font-size:        105%;
   padding:          15px;
   margin:           0px 10px 10px 10px;
-  
 }
 
 .footer {
@@ -62,17 +62,22 @@ a:visited {
   border-bottom:    thin dotted #675c47;
 }
 .sidebar {
-   top: 100px;
-   right: 200px;
    width:280px;
    float:right;
-   z-index: 100;
 }
 .allcontent {
 	width:               800px;
 	padding-top:           5px;
 	padding-bottom:        5px;
 	background-color:  #675c47;
+}
+.allcontent {
+	width:               800px;
+	padding-top:           5px;
+	padding-bottom:        5px;
+	background-color:  #675c47;
+	margin-left:          auto;
+	margin-right:         auto;
 }
 .ad {
 	position:        absolute;
@@ -82,4 +87,9 @@ a:visited {
 	height:              80px;
 	background-color: #ccbb00;
   z-index:  1;
+}
+.main {
+	position: relative;
+	top:           0px;
+	left:        200px;
 }

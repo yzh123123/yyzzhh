@@ -1,5 +1,4 @@
 body { 
-
   background-color: #b5a789;
   font-family:      Georgia, "Times New Roman", Times, serif;
   font-size:        small;
@@ -16,17 +15,18 @@ body {
   background:       #efe5d0 url(images/background.gif) top left;
   font-size:        105%;
   padding:          15px;
-  margin:           0px 330px 10px 10px;
+  margin:           0px 10px 10px 10px;
+  display: table-cell;
+  vertical-align: top;
 }
 
 .sidebar {
-
-	position:  absolute;
   background:       #efe5d0 url(images/background.gif) bottom right;
   font-size:        105%;
   padding:          15px;
   margin:           0px 10px 10px 10px;
-  
+  display: table-cell;
+  vertical-align: top;
 }
 
 .footer {
@@ -36,7 +36,6 @@ body {
   padding:          15px;
   margin:           10px;
   font-size:        90%;
-  clear:            right;
 }
 
 h1 {
@@ -61,25 +60,42 @@ a:visited {
   text-decoration:  none;
   border-bottom:    thin dotted #675c47;
 }
-.sidebar {
-   top: 100px;
-   right: 200px;
-   width:280px;
-   float:right;
-   z-index: 100;
+
+div.tableContainer {
+  display: table;
+  border-spacing: 10px;
 }
-.allcontent {
-	width:               800px;
-	padding-top:           5px;
-	padding-bottom:        5px;
-	background-color:  #675c47;
+
+div.talbeRow {
+  display: table-row;
+  border-spacing: 10px;
 }
-.ad {
-	position:        absolute;
-	top:                150px;
-	left:               100px;
-	width:              600px;
-	height:              80px;
-	background-color: #ccbb00;
-  z-index:  1;
+.drinks {
+    background-color: #efe5d0;
+    padding: 15px;
+      display: table-cell;
+  vertical-align: top;
+}
+.award {
+	position:absolute;
+	top: 30px;
+	left: 70%;
+}
+.coupon {
+	position: fixed;
+	top: 350px;
+	left: -90px;
+}
+.coupon a,img{
+	border: none;
+}
+.coupon { 
+	position: fixed; 
+	top: 350px; 
+	left: -210px; /* 初始位置在左侧 */ 
+	transition: left 0.5s ease; /* 添加过渡效果 */
+}
+
+.coupon:hover {
+	left: 0px; /* 悬停时移动到 0px 的位置 */
 }
